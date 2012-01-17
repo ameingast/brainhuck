@@ -1,0 +1,22 @@
+Name:                brainhuck
+Version:             0.1
+Synopsis:            A (simple) Brainfuck interpreter
+Description:         A (simple) Brainfuck interpreter
+Homepage:            http://github.com/ameingast/brainhuck
+License:             BSD3
+License-file:        LICENSE
+Author:              Andreas Meingast
+Maintainer:          ameingast@gmail.com
+Category:            Language
+Build-type:          Simple
+
+Extra-source-files:  src/Brainhuck/*.hs src/Brainhuck/Util/*.hs
+Cabal-version:       >=1.2
+
+Executable brainhuck
+  hs-source-dirs:   src
+  Main-is:          Main.hs
+  Build-Depends:    base >= 4 && < 5
+  Build-Depends:    haskell98 >= 1
+  ghc-options:      -Wall -fno-warn-unused-do-bind -O3
+  ghc-prof-options: -prof -auto-all
