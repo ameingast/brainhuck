@@ -4,7 +4,7 @@ module Main (
 
 import Brainhuck.Interpreter(execute)
 
-import System(getArgs)
+import System.Environment(getArgs)
 
 main :: IO ()
 main = getArgs >>= \args -> case args of
